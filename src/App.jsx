@@ -12,7 +12,6 @@ import Footer from "./components/Footer.jsx";
 function App() {
 
     return (
-        <>
             <Container className="py-4">
                     <Header />
                 <main>
@@ -57,7 +56,6 @@ function App() {
                 </main>
                 <Footer/>
             </Container>
-        </>
     )
 }
 
