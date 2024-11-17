@@ -1,9 +1,13 @@
+//Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from "react-bootstrap";
 import {Col} from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {Button} from "react-bootstrap";
+
+//Components
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -51,6 +55,7 @@ function App() {
                         </Col>
                     </Row>
                 </main>
+                <Footer/>
             </Container>
         </>
     )
