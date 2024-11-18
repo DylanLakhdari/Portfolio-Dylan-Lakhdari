@@ -11,7 +11,7 @@ import {Link} from "react-router-dom";
 function Accueil() {
 
     return (
-        <Container className="py-4">
+        <Container className="py-4 pb-0">
             <Header />
             <main>
                 <div className="p-5 mb-4 bg-body-tertiary rounded-3">
