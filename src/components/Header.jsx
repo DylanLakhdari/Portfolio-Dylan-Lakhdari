@@ -23,7 +23,7 @@ function Header() {
                         <span className="fs-4">Dylan Lakhdari</span>
                     </Link>
                     <span className="d-flex align-items-center mx-2">-</span>
-                    <Breadcrumb.Item className="my-auto" href="#"><Link to="/">Accueil</Link></Breadcrumb.Item>
+                    <Breadcrumb.Item className="my-auto"><Link to="/">Accueil</Link></Breadcrumb.Item>
                     <Breadcrumb.Item className="my-auto" active>{slicedSlug}</Breadcrumb.Item>
                 </Breadcrumb>
             </header>
