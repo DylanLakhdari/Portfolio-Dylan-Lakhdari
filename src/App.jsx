@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 //Pages
 import Accueil from "./pages/Accueil.jsx";
 import Projets from "./pages/Projets.jsx";
+import Stack from "./pages/Stack.jsx";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Accueil/>} />
                 <Route path="/projets" element={<Projets/>} />
+                <Route path="/stack" element={<Stack/>} />
             </Routes>
         </BrowserRouter>
     )

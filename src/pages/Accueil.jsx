@@ -12,7 +12,7 @@ function Accueil() {
 
     return (
         <Container className="py-4 pb-0">
-            <Header />
+            <Header/>
             <main>
                 <div className="p-5 mb-4 bg-body-tertiary rounded-3">
                     <Container fluid className="py-5">
@@ -48,9 +48,11 @@ function Accueil() {
                                 consequatur cum deleniti error, eum eveniet excepturi id impedit inventore laborum
                                 libero minus non quis quo repellat sapiente sint voluptatum?
                             </p>
-                            <Button variant={"outline-secondary"}>
-                                Voir mes compétences
-                            </Button>
+                            <Link to="/stack">
+                                <Button variant={"outline-secondary"}>
+                                    Voir mes compétences
+                                </Button>
+                            </Link>
                         </div>
                     </Col>
                 </Row>
