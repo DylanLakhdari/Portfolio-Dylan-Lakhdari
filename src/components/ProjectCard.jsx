@@ -1,5 +1,5 @@
 //Bootstrap
-import {Card, Button, Container, Row, Col} from "react-bootstrap";
+import {Card, Button, Container, Row, Col, Badge} from "react-bootstrap";
 import {motion} from "motion/react";
 
 //Data
@@ -9,16 +9,19 @@ import {ProjectList} from "./Data.jsx";
 function ProjectCard({id, title, tag, description}) {
     return (
         <Card id={id} className="shadow-sm">
-            <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
+            <a href="#">
+                <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
+            </a>
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>
+                <Badge variant="primary" className="px-2" href="#">{tag}</Badge>
+                <Card.Title className="my-2"><a href="#">{title}</a></Card.Title>
+                <Card.Text className="small text-muted">
                     {description} {tag}
                 </Card.Text>
-                <Button variant="primary">Voir le projet</Button>
+                <a href="#">Read more</a>
             </Card.Body>
         </Card>
-    )
+)
 }
 
 export function ProjectCardList() {
@@ -30,10 +33,10 @@ export function ProjectCardList() {
                     {ProjectList.map((project) => (
                         <Col key={`col-${project.id}`}>
                             <ProjectCard
-                                 id={project.id}
-                                 title={project.title}
-                                 tag={project.tag}
-                                 description={project.description}>
+                                id={project.id}
+                                title={project.title}
+                                tag={project.tag}
+                                description={project.description}>
                             </ProjectCard>
                         </Col>
                     ))}
