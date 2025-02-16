@@ -12,7 +12,7 @@ import { motion } from "motion/react"
 function Projets() {
 
     return (
-        <Container className="py-4 pb-0">
+        <Container fluid className="py-4 px-0 pb-0">
             <Header/>
             <main>
                 <Container className="py-5 text-center">

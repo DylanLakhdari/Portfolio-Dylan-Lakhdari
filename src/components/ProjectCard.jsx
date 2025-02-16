@@ -1,5 +1,5 @@
 //Bootstrap
-import {Card, Button, Container, Row, Col, Badge} from "react-bootstrap";
+import {Card, Container, Row, Col, Badge} from "react-bootstrap";
 import {motion} from "motion/react";
 
 //Data

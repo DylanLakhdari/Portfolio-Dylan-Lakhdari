@@ -5,7 +5,7 @@ import letter_d from "../assets/letter_d.svg";
 import {Link, useLocation} from "react-router-dom";
 
 //Bootstrap
-import {Breadcrumb} from "react-bootstrap";
+import {Breadcrumb, Container} from "react-bootstrap";
 
 //React-helmet
 import {Helmet} from "react-helmet";
@@ -19,20 +19,22 @@ function Header() {
 
     if (location.pathname !== "/") {
         return (
-            <header className="pb-1 mb-4 border-bottom">
-                <Helmet>
-                    <title>{titleSlug} - Dylan Lakhdari</title>
-                </Helmet>
-                <Breadcrumb className="align-items-baseline container-no-margin">
-                    <Link to="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
-                        <img src={letter_d} alt=""/>
-                        <span className="fs-4">Dylan Lakhdari</span>
-                    </Link>
-                    <span className="d-flex align-items-center mx-2">-</span>
-                    <Breadcrumb.Item className="my-auto"><Link to="/">Accueil</Link></Breadcrumb.Item>
-                    <Breadcrumb.Item className="my-auto" active>{titleSlug}</Breadcrumb.Item>
-                </Breadcrumb>
-            </header>
+            <Container>
+                <header className="pb-1 mb-4 border-bottom">
+                    <Helmet>
+                        <title>{titleSlug} - Dylan Lakhdari</title>
+                    </Helmet>
+                    <Breadcrumb className="align-items-baseline container-no-margin">
+                        <Link to="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
+                            <img src={letter_d} alt=""/>
+                            <span className="fs-4">Dylan Lakhdari</span>
+                        </Link>
+                        <span className="d-flex align-items-center mx-2">-</span>
+                        <Breadcrumb.Item className="my-auto"><Link to="/">Accueil</Link></Breadcrumb.Item>
+                        <Breadcrumb.Item className="my-auto" active>{titleSlug}</Breadcrumb.Item>
+                    </Breadcrumb>
+                </header>
+            </Container>
         )
     }
 
