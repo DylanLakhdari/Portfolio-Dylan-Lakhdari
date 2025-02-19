@@ -1,3 +1,4 @@
+//Bootstrap
 import {Container} from "react-bootstrap";
 
 function Footer() {
