@@ -6,24 +6,32 @@ import {motion} from "motion/react";
 
 //Data
 import {ProjectList} from "./Data.jsx";
+import {ModalProvider, ProjectModal, ProjectModalButton} from "./ProjectModal.jsx";
 
 // eslint-disable-next-line react/prop-types
 function ProjectCard({id, title, tag, description}) {
+
+    const projectData = { id, title, tag, description };
+
     return (
-        <Card id={id} className="shadow-sm">
-            <a href="#">
-                <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
-            </a>
-            <Card.Body>
-                <Badge variant="primary" className="px-2" href="#">{tag}</Badge>
-                <Card.Title className="my-2"><a href="#">{title}</a></Card.Title>
-                <Card.Text className="small text-muted">
-                    {description} {tag}
-                </Card.Text>
-                <a href="#">Read more</a>
-            </Card.Body>
-        </Card>
-)
+        <ModalProvider projectData={projectData}>
+            <ProjectModal/>
+            <Card id={id} className="shadow-sm">
+                <a href="#">
+                    <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
+                </a>
+                <Card.Body>
+                    <Badge variant="primary" className="px-2" href="#">{tag}</Badge>
+                    <Card.Title className="my-2"><a href="#">{title}</a></Card.Title>
+                    <Card.Text className="small text-muted">
+                        {description} {tag}
+                    </Card.Text>
+                    <ProjectModalButton/>
+                </Card.Body>
+            </Card>
+        </ModalProvider>
+
+    )
 }
 
 export function ProjectCardList() {
