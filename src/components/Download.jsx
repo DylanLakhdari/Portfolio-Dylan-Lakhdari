@@ -8,7 +8,7 @@ import {DownloadList} from "./Data.jsx";
 // eslint-disable-next-line react/prop-types
 function DownloadCard({id, title, icon, filePath, fileName}) {
 
-    const IconComponent = icon || FileEarmark; // Default to FiletypeDocx if no icon is provided
+    const IconComponent = icon || FileEarmark;
 
     return (
     <ListGroup.Item key={id} className="fw-semibold">

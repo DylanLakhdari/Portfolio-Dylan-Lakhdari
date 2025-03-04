@@ -2,6 +2,7 @@ export const ProjectList = [
     {
         id: "a",
         title: "App E-commerce Django",
+        imgLink:"",
         tag: "Django",
         description: "Application e-commerce Django avec base de donnée et login utilisateur.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
@@ -11,15 +12,17 @@ export const ProjectList = [
     {
         id: "b",
         title: "Todo list ReactJS",
+        imgLink:"src/assets/img/ToDo-ReactJS.png",
         tag: "React JS",
         description: "Simple Todo list en utilisant ReactJS et le stockage des données en DOM.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
-        demoLink: "https://google.com",
+        demoLink: "https://dylanlakhdari.github.io/ToDo-ReactJS/",
     },
 
     {
         id: "c",
         title: "Hetic-Spotlight",
+        imgLink:"",
         tag: "PHP",
         description: "Site de réservation de spectacles avec base de données et templates",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
@@ -29,6 +32,7 @@ export const ProjectList = [
     {
         id: "d",
         title: "Earth-Quest",
+        imgLink:"",
         tag: "Python",
         description: "RPG en 2D avec python, affichage couleur et bruitages.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
@@ -38,15 +42,17 @@ export const ProjectList = [
     {
         id: "e",
         title: "Sneakers",
+        imgLink:"src/assets/img/sneakers.png",
         tag: "HTML",
         description: "Intégration d'une maquette de site e-commerce, page produit.",
-        githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
-        demoLink: "https://google.com",
+        githubLink: "https://github.com/DylanLakhdari/Sneakers",
+        demoLink: "https://dylanlakhdari.github.io/Sneakers/",
     },
 
     {
         id: "f",
         title: "MDtic",
+        imgLink:"",
         tag: "React JS",
         description: "Éditeur de fichiers markdown réalisé avec React.js, proposant une interface au style rétro",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",

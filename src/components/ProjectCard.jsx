@@ -9,16 +9,26 @@ import {ProjectList} from "./Data.jsx";
 import {ModalProvider, ProjectModal, ProjectModalButton} from "./ProjectModal.jsx";
 
 // eslint-disable-next-line react/prop-types
-function ProjectCard({id, title, tag, description, githubLink, demoLink}) {
+function ProjectCard({id, title,imgLink , tag, description, githubLink, demoLink}) {
 
-    const projectData = { id, title, tag, description, githubLink, demoLink };
+    const projectData = { id, title,imgLink , tag, description, githubLink, demoLink };
+
+    const CardImg = imgLink || "src/assets/img/card_placeholder.png";
+
+    const cardImageStyle = {
+        height: '250px',      // Hauteur fixe
+        objectFit: 'cover',   // Assure que l'image couvre toute la zone
+        objectPosition: 'center', // Centre l'image
+        width: '100%'         // Largeur à 100% de la card
+    };
+
 
     return (
         <ModalProvider projectData={projectData}>
             <ProjectModal/>
             <Card id={id} className="shadow-sm">
                 <a href="#">
-                    <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
+                    <Card.Img style={cardImageStyle} variant="top" src={CardImg}/>
                 </a>
                 <Card.Body>
                     <Badge variant="primary" className="px-2" href="#">{tag}</Badge>
@@ -45,6 +55,7 @@ export function ProjectCardList() {
                             <ProjectCard
                                 id={project.id}
                                 title={project.title}
+                                imgLink={project.imgLink}
                                 tag={project.tag}
                                 description={project.description}
                                 githubLink={project.githubLink}
