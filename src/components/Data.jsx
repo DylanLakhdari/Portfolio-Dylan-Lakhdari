@@ -5,6 +5,7 @@ export const ProjectList = [
         tag: "Django",
         description: "Application e-commerce Django avec base de donnée et login utilisateur.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
     {
@@ -13,6 +14,7 @@ export const ProjectList = [
         tag: "React JS",
         description: "Simple Todo list en utilisant ReactJS et le stockage des données en DOM.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
     {
@@ -21,6 +23,7 @@ export const ProjectList = [
         tag: "PHP",
         description: "Site de réservation de spectacles avec base de données et templates",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
     {
@@ -29,6 +32,7 @@ export const ProjectList = [
         tag: "Python",
         description: "RPG en 2D avec python, affichage couleur et bruitages.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
     {
@@ -37,6 +41,7 @@ export const ProjectList = [
         tag: "HTML",
         description: "Intégration d'une maquette de site e-commerce, page produit.",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
     {
@@ -45,6 +50,7 @@ export const ProjectList = [
         tag: "React JS",
         description: "Éditeur de fichiers markdown réalisé avec React.js, proposant une interface au style rétro",
         githubLink: "https://github.com/DylanLakhdari/EspaceShopping",
+        demoLink: "https://google.com",
     },
 
 ]
@@ -55,7 +61,7 @@ export const StackList = [
         title: "Ma stack Frontend",
         tag: "Frontend 💻",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cumque ducimus eum facilis fugiat magnam nulla obcaecati omnis perspiciatis",
-     },
+    },
     {
         id: "a",
         title: "Ma stack Backend",

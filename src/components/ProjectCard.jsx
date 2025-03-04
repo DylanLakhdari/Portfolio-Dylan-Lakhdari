@@ -9,9 +9,9 @@ import {ProjectList} from "./Data.jsx";
 import {ModalProvider, ProjectModal, ProjectModalButton} from "./ProjectModal.jsx";
 
 // eslint-disable-next-line react/prop-types
-function ProjectCard({id, title, tag, description, githubLink}) {
+function ProjectCard({id, title, tag, description, githubLink, demoLink}) {
 
-    const projectData = { id, title, tag, description, githubLink };
+    const projectData = { id, title, tag, description, githubLink, demoLink };
 
     return (
         <ModalProvider projectData={projectData}>
@@ -47,7 +47,8 @@ export function ProjectCardList() {
                                 title={project.title}
                                 tag={project.tag}
                                 description={project.description}
-                                githubLink={project.githubLink}>
+                                githubLink={project.githubLink}
+                                demoLink={project.demoLink}>
                             </ProjectCard>
                         </Col>
                     ))}

@@ -39,7 +39,7 @@ export function ProjectModal() {
             <Modal.Body>{projectData.description}</Modal.Body>
             <Modal.Footer className="justify-content-center">
                 <Stack gap={2} className="col-md-5 mx-auto">
-                    <Button variant="primary"><PlayCircle className="me-2 mt-1 h4"/>Demo en ligne</Button>
+                    <Button href={projectData.demoLink} target="_blank" variant="primary"><PlayCircle className="me-2 mt-1 h4"/>Demo en ligne</Button>
                     <Button href={projectData.githubLink} target="_blank" variant="outline-secondary"><Github className="me-2 mt-1 h4"/>Code source</Button>
                 </Stack>
             </Modal.Footer>
