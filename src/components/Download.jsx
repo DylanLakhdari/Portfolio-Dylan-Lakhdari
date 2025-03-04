@@ -2,14 +2,17 @@
 import {ListGroup, ListGroupItem} from "react-bootstrap";
 
 //Bootstrap-icons
-import {FiletypePdf, FiletypeDocx} from "react-bootstrap-icons";
+import {FileEarmark} from "react-bootstrap-icons";
 import {DownloadList} from "./Data.jsx";
 
 // eslint-disable-next-line react/prop-types
 function DownloadCard({id, title, icon, filePath, fileName}) {
+
+    const IconComponent = icon || FileEarmark; // Default to FiletypeDocx if no icon is provided
+
     return (
     <ListGroup.Item key={id} className="fw-semibold">
-        <a href={filePath} download={fileName}> <FiletypeDocx
+        <a href={filePath} download={fileName} className="text-decoration-none"> <IconComponent
             className="me-2 mt-1 text-primary h4"/>{title}
         </a>
     </ListGroup.Item>

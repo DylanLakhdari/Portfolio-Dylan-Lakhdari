@@ -83,18 +83,20 @@ export const StackList = [
 
 ]
 
+import {FiletypePdf, FiletypeDocx} from "react-bootstrap-icons";
+
 export const DownloadList = [
     {
         id: "a",
         title: "Format PDF",
-        icon: "FiletypePdf",
+        icon: FiletypePdf,
         filePath: "public/downloads/CV_Developpeur_Web.pdf",
         fileName: "CV_Developpeur_Web",
     },
     {
         id: "b",
         title: "Format DOCX",
-        icon: "FiletypeDocx",
+        icon: FiletypeDocx,
         filePath: "public/downloads/CV_Developpeur_Web.docx",
         fileName: "CV_Developpeur_Web",
     },
