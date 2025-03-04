@@ -63,22 +63,39 @@ export const StackList = [
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cumque ducimus eum facilis fugiat magnam nulla obcaecati omnis perspiciatis",
     },
     {
-        id: "a",
+        id: "b",
         title: "Ma stack Backend",
         tag: "Backend ⚙️",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cumque ducimus eum facilis fugiat magnam nulla obcaecati omnis perspiciatis",
     },
     {
-        id: "a",
+        id: "c",
         title: "Ma stack Database",
         tag: "Database 🌐",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cumque ducimus eum facilis fugiat magnam nulla obcaecati omnis perspiciatis",
     },
     {
-        id: "a",
+        id: "d",
         title: "Ma stack Design",
         tag: "Design 🖌️",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cumque ducimus eum facilis fugiat magnam nulla obcaecati omnis perspiciatis",
     },
 
+]
+
+export const DownloadList = [
+    {
+        id: "a",
+        title: "Format PDF",
+        icon: "FiletypePdf",
+        filePath: "public/downloads/CV_Developpeur_Web.pdf",
+        fileName: "CV_Developpeur_Web",
+    },
+    {
+        id: "b",
+        title: "Format DOCX",
+        icon: "FiletypeDocx",
+        filePath: "public/downloads/CV_Developpeur_Web.docx",
+        fileName: "CV_Developpeur_Web",
+    },
 ]
