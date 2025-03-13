@@ -9,9 +9,9 @@ import {ProjectList} from "./Data.jsx";
 import {ModalProvider, ProjectModal, ProjectModalButton} from "./ProjectModal.jsx";
 
 // eslint-disable-next-line react/prop-types
-function ProjectCard({id, title,imgLink , tag, description, githubLink, demoLink}) {
+function ProjectCard({id, title,imgLink , tag, description, githubLink, demoLink, gifLink}) {
 
-    const projectData = { id, title,imgLink , tag, description, githubLink, demoLink };
+    const projectData = { id, title,imgLink , tag, description, githubLink, demoLink, gifLink};
 
     const CardImg = imgLink || "src/assets/img/card_placeholder.png";
 
@@ -59,7 +59,8 @@ export function ProjectCardList() {
                                 tag={project.tag}
                                 description={project.description}
                                 githubLink={project.githubLink}
-                                demoLink={project.demoLink}>
+                                demoLink={project.demoLink}
+                                gifLink={project.gifLink}>
                             </ProjectCard>
                         </Col>
                     ))}

@@ -28,11 +28,11 @@ export function ProjectModal() {
     const {show, handleClose, projectData} = useModal();
 
     return (
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal show={show} onHide={handleClose} centered size="lg">
             <Modal.Header closeButton>
                 <Modal.Title>{projectData.title}</Modal.Title>
             </Modal.Header>
-            <Card.Img variant="top" src="src/assets/img/card_placeholder.png"/>
+            <Card.Img variant="top" src={projectData.gifLink}/>
             <Container className="mt-4">
                 <Badge variant="primary" className="px-2" href="#">{projectData.tag}</Badge>
             </Container>
